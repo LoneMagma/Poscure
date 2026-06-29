@@ -2,35 +2,33 @@
 
 <br>
 
-<svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72" fill="none">
-  <rect width="72" height="72" rx="18" fill="#16161A"/>
-  <rect width="72" height="72" rx="18" stroke="#2C2C36" stroke-width="1.5"/>
-  <ellipse cx="36" cy="22" rx="7.5" ry="8.5" fill="none" stroke="#C8A97E" stroke-width="2.5"/>
-  <path d="M36 30.5 L36 47" stroke="#C8A97E" stroke-width="2.5" stroke-linecap="round"/>
-  <path d="M36 36 L27 43" stroke="#C8A97E" stroke-width="2.2" stroke-linecap="round"/>
-  <path d="M36 36 L45 43" stroke="#C8A97E" stroke-width="2.2" stroke-linecap="round"/>
-  <path d="M36 47 L29 60" stroke="#C8A97E" stroke-width="2.2" stroke-linecap="round"/>
-  <path d="M36 47 L43 60" stroke="#C8A97E" stroke-width="2.2" stroke-linecap="round"/>
-</svg>
+<img src="https://raw.githubusercontent.com/lonemagma/poscure/main/assets/icon.png" width="88" alt="Poscure logo" />
 
 <h1>Poscure</h1>
 
-<p><strong>Draw more. Think less.</strong></p>
+<p><em>Draw more. Think less.</em></p>
 
-<p>A minimalist desktop app for gesture drawing and figure study.<br>Load your references, set a timer, and practice without friction.</p>
-
-<br>
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-C8A97E?style=flat-square&labelColor=16161A)](https://github.com/lonemagma/poscure/blob/main/LICENSE)
-[![Release](https://img.shields.io/badge/Release-v1.0.0-5A9E6F?style=flat-square&labelColor=16161A)](https://github.com/lonemagma/poscure/releases/tag/v1.0.0)
-[![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux-9896A4?style=flat-square&labelColor=16161A)](https://github.com/lonemagma/poscure/releases)
-[![Python](https://img.shields.io/badge/Python-3.10%2B-3572A5?style=flat-square&labelColor=16161A)](https://www.python.org/)
-[![Built with PySide6](https://img.shields.io/badge/PySide6-Qt6-41CD52?style=flat-square&labelColor=16161A)](https://pypi.org/project/PySide6/)
-[![Pacify Project](https://img.shields.io/badge/Pacify-Project-C8A97E?style=flat-square&labelColor=16161A)](https://pacify.site)
+<p>
+A minimalist desktop app for gesture drawing and figure study.<br>
+Load your references, set a timer, start drawing — nothing else in the way.
+</p>
 
 <br>
 
-**[Download for Windows](https://github.com/lonemagma/poscure/releases/download/v1.0.0/Poscure.exe)** · **[Live Site](https://poscure.vercel.app)** · **[Report an Issue](https://github.com/lonemagma/poscure/issues)**
+[![License: MIT](https://img.shields.io/badge/License-MIT-C8A97E.svg?style=flat-square&labelColor=16161A)](LICENSE)
+[![Release](https://img.shields.io/badge/Release-v1.0.0-5A9E6F.svg?style=flat-square&labelColor=16161A)](https://github.com/lonemagma/poscure/releases/tag/v1.0.0)
+[![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux-9896A4.svg?style=flat-square&labelColor=16161A)](https://github.com/lonemagma/poscure/releases)
+[![Python](https://img.shields.io/badge/Python-3.10%2B-3572A5.svg?style=flat-square&labelColor=16161A)](https://www.python.org/)
+[![PySide6](https://img.shields.io/badge/PySide6-Qt6-41CD52.svg?style=flat-square&labelColor=16161A)](https://pypi.org/project/PySide6/)
+[![Offline](https://img.shields.io/badge/100%25-Offline-C8A97E.svg?style=flat-square&labelColor=16161A)](#)
+[![No Telemetry](https://img.shields.io/badge/No-Telemetry-B85C5C.svg?style=flat-square&labelColor=16161A)](#)
+[![Pacify](https://img.shields.io/badge/Pacify-Project-C8A97E.svg?style=flat-square&labelColor=16161A)](https://pacify.site)
+
+<br>
+
+[**⬇ Download for Windows**](https://github.com/lonemagma/poscure/releases/download/v1.0.0/Poscure.exe) &nbsp;·&nbsp;
+[**🌐 Live Site**](https://poscure.vercel.app) &nbsp;·&nbsp;
+[**🐛 Report Issue**](https://github.com/lonemagma/poscure/issues)
 
 <br>
 
@@ -38,88 +36,153 @@
 
 ---
 
-## What is Poscure?
+## Overview
 
-Poscure is a local-first, offline desktop tool for artists who practice gesture drawing and figure study. You give it a folder of reference images, set a timer duration, and it takes care of the rest — cycling through images, counting down, and staying completely out of your way.
+Poscure is a **local-first desktop practice tool** for artists who do gesture drawing and figure study. The idea is simple: you shouldn't have to think about the app. Point it at a folder, pick a timer, and draw.
 
-There are no accounts, no internet connection required, no telemetry, and no cloud storage. Your files stay on your machine.
+Most alternatives are either web-based (which means your reference library lives online, loads slowly, or requires an account), or desktop apps that are bloated with features that interrupt the act of drawing. Poscure does one thing — run timed sessions over your own image library — and gets out of your way.
+
+Everything runs offline. Your files never leave your machine. There are no accounts, no telemetry, no cloud sync, no monetization. It's a tool that needed to exist.
 
 ---
 
 ## Features
 
-| | |
-|---|---|
-| **Your own library** | Unlimited local folders with recursive scanning and orientation filtering |
-| **Timed sessions** | Fixed or random duration per image — 30s gestures up to 10min studies |
-| **Fullscreen focus** | Session mode fills the screen; controls auto-hide after 3 seconds |
-| **Live transforms** | Mirror and grayscale toggle mid-session, including in random mode |
-| **Hotkey-driven** | Space pauses, arrows navigate, G/M toggle transforms — all remappable |
-| **Smart caching** | SQLite thumbnail cache with background preloading; fast with 10k+ libraries |
+### 📁 Local Library Management
+
+- Add unlimited local folders — Poscure scans them **recursively**
+- Filter images by orientation (portrait / landscape / square)
+- Drag a folder straight onto the sidebar to add it instantly
+- SQLite-backed **thumbnail cache** so even 10,000+ image libraries feel snappy
+- Background preloading — the next image is ready before the timer runs out
+
+### ⏱ Timed Sessions
+
+- **Fixed duration** — every image gets the same timer (e.g. 30 seconds)
+- **Random duration** — varies within a range you set
+- Built-in **break system** — configurable rest intervals between images
+- Session presets for common workflows:
+
+| Preset | Duration | Use case |
+|--------|----------|----------|
+| Quick Gesture | 30s | Loose, fast line warmup |
+| Short Gesture | 60s | Build line economy and confidence |
+| Figure Study | 2–5 min | Proportion, structure, weight |
+| Long Study | 5–10 min | Anatomy, construction, detail |
+| Custom | Any | You define it |
+
+### 🖥 Fullscreen Session Mode
+
+The session view is deliberately minimal. No panels, no menus — just the image and the timer.
+
+```
+╔══════════════════════════════════════════════╗
+║  34 / 120  ● RUNNING          Figure Studies ║  ← HUD fades out after 3s
+╠══════════════════════════════════════════════╣
+║                                              ║
+║                  [ image ]              ◷ 22 ║  ← ring timer, top-right
+║                                              ║
+╠══════════════════════════════════════════════╣
+║ ████████████░░░░░░░░░░░░  28%               ║  ← session progress
+║ ◀ Prev  ⏸ Pause  Next ▶  ⇆ Mirror  ◑ Gray ║  ← controls fade on idle
+╚══════════════════════════════════════════════╝
+```
+
+Controls auto-hide after **3 seconds** of inactivity and return on any mouse movement. The ring timer depletes visually as each image's countdown runs. Previous image history is maintained even in random shuffle mode.
+
+### 🔁 Live Transforms
+
+Toggle mid-session without interrupting flow:
+
+- **Mirror** — flip the image horizontally to catch asymmetry in your drawing
+- **Grayscale** — strip colour to focus on value, form, and light
+
+Both work in real time on whichever image is currently displayed.
+
+### ⌨ Hotkey Reference
+
+Every action in Poscure has a keyboard shortcut. The goal is to never need to touch the mouse during a session.
+
+| Key | Action |
+|-----|--------|
+| `Space` | Pause / Resume |
+| `→` / `N` | Next image |
+| `←` / `P` | Previous image |
+| `M` | Toggle mirror |
+| `G` | Toggle grayscale |
+| `T` | Adjust timer |
+| `F` | Toggle fullscreen |
+| `Esc` | End session |
+
+> All shortcuts are **remappable** from the settings panel.
 
 ---
 
 ## Install
 
-### Windows
+### Windows — portable `.exe`
 
-The Windows release is a single portable `.exe` — no installer, no Python required.
+No installer. No Python. Download and run.
 
-1. **[Download Poscure.exe](https://github.com/lonemagma/poscure/releases/download/v1.0.0/Poscure.exe)** (~58 MB)
-2. Double-click to run. If Windows SmartScreen appears, click **"More info"** → **"Run anyway"**
+**1. Download**
 
-> **Why the SmartScreen warning?** Code signing certificates cost ~$300/year. The app is unsigned but fully open source — read the source if you want to verify it before running.
+```
+https://github.com/lonemagma/poscure/releases/download/v1.0.0/Poscure.exe
+```
 
-3. Click **"+ Add Folder"** or drag a folder onto the sidebar to add your image library
+Size: ~58 MB · Source: github.com/lonemagma/poscure
+
+**2. Run**
+
+Double-click `Poscure.exe`. Windows may show a SmartScreen warning:
+
+> **"Windows protected your PC"**
+
+Click **"More info"** → **"Run anyway"**.
+
+> **Why does this appear?** Code signing certificates cost ~$300/year. Poscure is unsigned but fully open source — you can read every line before running it. If you'd prefer, build from source instead (see the Linux instructions, they work on Windows too with Python installed).
+
+**3. Add your image library**
+
+Click **`+ Add`** in the sidebar, or drag any folder directly onto it. Poscure scans recursively and builds a thumbnail cache automatically.
 
 ---
 
-### Linux
+### Linux — from source
+
+**Prerequisites:** Python 3.10+, pip, git
 
 ```bash
-# 1. Clone and remove a known ghost directory (required once after clone)
+# Clone the repo
 git clone https://github.com/lonemagma/poscure
 cd poscure
+
+# ⚠ Known setup quirk: remove a ghost directory created by the repo
+# This only needs to be done once, immediately after cloning
 rm -rf src/{core,ui,widgets,utils}
 
-# 2. Set up Python environment and install dependencies
-python -m venv venv && source venv/bin/activate
+# Create a virtual environment and install dependencies
+python -m venv venv
+source venv/bin/activate
 pip install -r requirements.txt
 
-# 3. Run
+# Launch
 cd src && python main.py
 ```
 
----
-
-### Requirements
-
-| Requirement | Notes |
-|---|---|
-| Windows 10+ or Linux | macOS works from source (untested in v1) |
-| Python 3.10+ | Linux / source only — Windows .exe is self-contained |
-| PySide6 + Pillow | Auto-installed via `pip install -r requirements.txt` |
-| ~100 MB disk | App binary + SQLite thumbnail cache |
+> **The ghost directory step is not optional.** It's a known issue with how the repo was set up. If you skip it, imports will silently resolve to the wrong path and the app will fail to start.
 
 ---
 
-## Who it's for
+### System Requirements
 
-- **Gesture drawers** — 30–60s sessions with rapid image cycling
-- **Figure study artists** — longer sessions with structured breaks
-- **Illustration students** — curated reference packs for specific subjects
-- **Daily warmup artists** — opens fast, no friction, gets out of your way
-
----
-
-## Tech Stack
-
-```
-Python 3.10+    Core runtime
-PySide6         Qt6 GUI framework
-Pillow          Image loading and transforms
-SQLite          Thumbnail cache and session state
-```
+| | Windows | Linux |
+|--|---------|-------|
+| **OS** | Windows 10+ | Any modern distro |
+| **Python** | Not required (portable exe) | 3.10+ |
+| **Dependencies** | Bundled | PySide6, Pillow (via pip) |
+| **Disk space** | ~58 MB + cache | ~100 MB + cache |
+| **macOS** | — | Works from source (untested in v1) |
 
 ---
 
@@ -128,52 +191,78 @@ SQLite          Thumbnail cache and session state
 ```
 poscure/
 ├── src/
-│   ├── main.py          Entry point
-│   ├── core/            Session logic, timer, image queue
-│   ├── ui/              Main window, library view, session view
-│   ├── widgets/         Reusable UI components
-│   └── utils/           Image transforms, caching helpers
+│   ├── main.py              Entry point
+│   ├── core/
+│   │   ├── session.py       Session state machine, image queue, timer logic
+│   │   ├── library.py       Folder management, recursive scanning
+│   │   └── cache.py         SQLite thumbnail cache
+│   ├── ui/
+│   │   ├── main_window.py   Root window and layout
+│   │   ├── library_view.py  Sidebar + image grid
+│   │   └── session_view.py  Fullscreen session mode
+│   ├── widgets/             Reusable components (ring timer, image cell, etc.)
+│   └── utils/
+│       ├── transforms.py    Mirror, grayscale, resize logic (Pillow)
+│       └── config.py        Settings persistence
 ├── requirements.txt
 └── LICENSE
 ```
 
 ---
 
-## Contributing
+## Tech Stack
 
-Poscure is MIT licensed and issues/PRs are welcome.
+| Layer | Technology | Purpose |
+|-------|-----------|---------|
+| Language | Python 3.10+ | Core runtime |
+| GUI | PySide6 (Qt6) | Cross-platform desktop UI |
+| Images | Pillow | Loading, transforms, thumbnail generation |
+| Storage | SQLite | Thumbnail cache, session state, folder registry |
 
-1. Fork the repo
-2. Create a branch: `git checkout -b feature/your-feature`
-3. Commit your changes
-4. Open a pull request
-
-Please open an issue before working on anything significant — it helps avoid duplicate effort.
+No web views. No Electron. No 300 MB `node_modules`. Native Qt6 widgets, rendered by the OS.
 
 ---
 
-## About
+## Roadmap
 
-<table>
-<tr>
-<td><strong>Author</strong></td>
-<td>LoneMagma — <a href="https://instagram.com/lonemagma">@lonemagma</a> · <a href="https://pacify.site">pacify.site</a></td>
-</tr>
-<tr>
-<td><strong>Part of</strong></td>
-<td><a href="https://pacify.site">Pacify</a> — a family of focused, zero-noise tools</td>
-</tr>
-<tr>
-<td><strong>License</strong></td>
-<td>MIT</td>
-</tr>
-</table>
+Things that may land in a future version:
 
-### AI Disclosure
+- [ ] macOS `.app` build (v1 works from source but untested)
+- [ ] Session history and stats (images seen, total time drawn)
+- [ ] Export session as a playlist / re-run a past session
+- [ ] Custom session presets that persist between runs
+- [ ] Linux `.AppImage` or Flatpak release
 
-The majority of Poscure's codebase was generated by **Claude (Anthropic)** through directed sessions on Claude.ai. This is a deliberate choice — one developer using AI can ship what normally takes a team, without sacrificing structure or intent.
+PRs and issue reports are welcome.
 
-The architecture, UX decisions, and product direction are entirely human. An architect doesn't lay every brick; the building is still theirs.
+---
+
+## Contributing
+
+1. **Fork** the repo and clone your fork
+2. Create a branch: `git checkout -b feature/what-youre-adding`
+3. Make your changes — keep diffs focused
+4. Open a PR with a clear description of what changed and why
+
+Please open an issue before starting significant work. It avoids duplicate effort and helps make sure the direction fits.
+
+---
+
+## AI Disclosure
+
+Most of Poscure's codebase was written by **Claude (Anthropic)**, directed through sessions on Claude.ai. This is intentional and not something being hidden — one person using AI as a force multiplier can ship what normally takes a small team, without compromising on structure or intent.
+
+Architecture decisions, UX choices, feature scope, and everything shipped are entirely human. An architect doesn't lay every brick; the building is still theirs.
+
+**Tools used:**
+- [Claude (Anthropic)](https://claude.ai) — code generation, debugging
+- Python · PySide6 · Pillow · SQLite — runtime stack
+
+---
+
+## License
+
+MIT — do whatever you want with it. See [`LICENSE`](LICENSE).
 
 ---
 
@@ -181,7 +270,7 @@ The architecture, UX decisions, and product direction are entirely human. An arc
 
 <br>
 
-Made with ♥ by [LoneMagma](https://instagram.com/lonemagma) · Part of [Pacify](https://pacify.site)
+Made with ♥ by [LoneMagma](https://instagram.com/lonemagma) &nbsp;·&nbsp; Part of [Pacify](https://pacify.site)
 
 <br>
 
